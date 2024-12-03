@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Brendlar royxati</title>
+</head>
+<body>
+    <h1>Brendlar royxati</h1>
+    <ul>
+        {% for brand in brands %}
+        <li>{{ brand.name }} ({{ brand.country }})</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'car_list' %}">Mashinalar royxati</a>
+</body>
+</html>
